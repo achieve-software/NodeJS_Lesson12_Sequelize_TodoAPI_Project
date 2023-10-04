@@ -10,7 +10,7 @@ require("dotenv").config();
 const PORT = process.env.PORT || 8000;
 app.use(express.json())
 
-
+app.use(require("./app/routes/todo"))
 
 app.use(require("./app/errorHandler"))
 

@@ -34,7 +34,7 @@ const Todo = sequelize.define("todo", {
 
 })
 
-// sequelize.sync()
+sequelize.sync()
 sequelize.authenticate()
     .then(() => console.log('* DB Connected *'))
     .catch((err) => console.log('* DB Not Connected *', err))
